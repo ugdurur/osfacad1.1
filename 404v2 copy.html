@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    *{
+        margin: 0;
+        padding: 0%;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Poppins', sans-serif;
+        background-color: teal;
+        padding-bottom: 130px;
+    }
+
+    .w-full { width: 100%; }
+    
+    .container{
+        width: 70%;
+        background-color:rgba(255, 255, 255, 0.09);
+        margin: auto;
+    }
+    
+    /* header start */
+    header{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+        padding: 15px;
+    }
+    header nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    form.example {
+      display: flex;
+    }
+
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid teal;
+        float: left;
+        background: #f1f1f1;
+    }
+
+    form.example button {
+        float: left;
+        padding: 10px;
+        background:rgba(255, 255, 255, 0.09);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        border-left: none;
+        cursor: pointer;
+    }
+
+    form.example button:hover {
+        background: teal;
+    }
+
+    header nav .logo a{
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    
+    header nav ul{
+        color: white;
+        list-style: none;
+    }
+    header nav ul li a{
+         color: white;
+         text-decoration: none; 
+         transition: all .25s ease
+    }
+    header nav ul li a:hover{
+        color: rgb(229, 255, 0);
+    }
+    header nav .menu{
+        display: flex;
+        align-items: center;
+        column-gap: 48px;
+    }
+    /* header end */
+
+  .footer{
+      position:fixed;
+      bottom:0;
+      width:100%;
+      height: 130px;
+      margin: 0%;
+      padding: 15px;
+      box-sizing: border-box;
+      background-color: rgba(19, 19, 19, 0.7);
+      text-align: center;
+      text-decoration: white;
+
+    }
+
+  .footer a{
+    column-gap: 20px;
+    color: white;
+  }
+  .fa {
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    border-radius:50%
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius:50%
+  }
+  .fa-youtube{
+    background: red;
+    color: white;
+    border-radius:50%
+  }
+  #copy {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  /* footer end */
+  /* responsive start */
+    @media(max-width:700px) {
+        .container{
+            width: 100%;
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+  /* responsive end */
+  .swiper-slide { width: 100%; height: 600px; }
+  </style>
+    
+</head>
+<body>
+    <!-- Header Start-->
+    <header class="container">
+        <nav>
+            <div class="logo">
+                <a href="home.html">OSF Academy</a>
+            </div>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="404v2.html">About</a></li>
+                <li><a href="404v2.html">Products</a></li>
+                <li><a href="404v2.html">Contact</a></li>
+            </ul>
+            <div class="topnav">
+                <form class="example" action="">
+                  <input type="text" name="search" placeholder="Search..."/>
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- Header End-->
+    
+    <main class="container">
+        <div class="section">
+            <h3>404 Not Found</h3>
+            <p>
+                look like this page is lost...
+            </p>
+        </div>
+  <!-- footer start -->
+  <footer>
+    <div class="footer">
+      <div id="copy">
+        <p>
+          © Copyright 2022
+          <br> 
+          All Rights Reserved.
+        </p>
+    </div>
+    <div id="social">
+      <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/" class="fa fa-twitter"></a>
+      <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+    </div>
+  </footer>
+  <!-- footer end -->
+</body>
+
+</html>
